@@ -1,6 +1,10 @@
-/* Here is the long-term application mock  */
-let i = 0
+const Koa = require('koa')
+const pagesRouter = require('./routers/pages')
 
-setInterval(() => {
-  console.log(++i)
-}, 2000)
+const app = new Koa()
+
+app
+  .use(pagesRouter.routes())
+  .use(pagesRouter.allowedMethods())
+
+app.listen(80)

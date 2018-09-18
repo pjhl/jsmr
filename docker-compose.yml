@@ -1,4 +1,6 @@
-version: '2'
+version: '3'
 services:
   rest:
     build: ./rest
+    ports:
+      - "${REST_PORT:-8080}:80"
