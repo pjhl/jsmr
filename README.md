@@ -1,5 +1,12 @@
 # JSMR
 
+## Start
+
+To start the development version with docker-compose:
+
+```bash
+docker-compose up --build
+```
 
 ## Applications
 
