@@ -4,6 +4,8 @@ services:
     build: ./rest
     ports:
       - "${REST_PORT:-8080}:80"
+    volumes:
+      - "./rest/src/:/app/src/:ro"
     depends_on:
       - mongo
   mongo:
