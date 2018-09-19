@@ -8,6 +8,12 @@ To start the development version with docker-compose:
 docker-compose up --build
 ```
 
+## Technology stack
+
+* `node` **v10.10**
+* `mongo` **v4.1**
+
+
 ## Applications
 
 * `frontend` - Web-site
