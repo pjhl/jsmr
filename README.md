@@ -26,13 +26,16 @@ docker-compose up --build
 
 ### 1. Pages (static pages module)
 
-Fields:
+| Name | Type | Description |
+|------|------|-------------|
+| pathname | String\* | Path to the page without `.html`. Lowercase, allowed symbols: `/^[a-z0-9/-]+$/`) |
+| status | String\* | Status: `DISABLED` or `ENABLED` |
+| name | String\* | Page name. Max 70 symbols |
+| meta | Object | Meta-data |
+| meta.title | String | Meta-title. Max 70 symbols |
+| meta.description | String | Meta-description. Max 160 symbols |
+| body | String | Page body (HTML) |
 
-* id
-* pathname
-* status (DISABLED, ENABLED)
-* name
-* body
 
 ### 2. Users (users)
 
