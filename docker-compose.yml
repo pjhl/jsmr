@@ -1,5 +1,14 @@
 version: '2.2'
 services:
+  frontend:
+    build: ./frontend
+    ports:
+      - "${REST_PORT:-8081}:80"
+    volumes:
+      - "./frontend/public/:/app/public/:ro"
+      - "./frontend/src/:/app/src/:ro"
+    depends_on:
+      - rest
   rest:
     build: ./rest
     ports:
