@@ -14,7 +14,7 @@ const Root = ({ store }) => (
         <Route path='/' exact component={Home} />
         <Route path='/about' component={About} />
         <Route path='/topics' component={Topics} />
-        <Route path='/*.html' exact component={Page} />
+        <Route path='/:pathname([a-z0-9/-]+).html' exact component={Page} />
       </Switch>
     </Router>
   </Provider>

@@ -8,7 +8,7 @@ class Page extends Component {
   }
 
   updateData () {
-    const pathname = this.props.match.params[0]
+    const pathname = this.props.match.params.pathname
     this.props.onGetPage(pathname)
   }
 
