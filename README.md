@@ -1,5 +1,7 @@
 # JSMR
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 ## Start
 
 To start the development version with docker-compose:
