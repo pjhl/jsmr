@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from './theme/Header'
 import {
   Route,
   Link
@@ -12,7 +13,7 @@ const Topic = ({ match }) => (
 
 const Topics = ({ match }) => (
   <div>
-    <h2>Topics</h2>
+    <Header>Topics</Header>
     <ul>
       <li>
         <Link to={`${match.url}/rendering`}>

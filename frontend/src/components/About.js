@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { getTracks } from '../actions/tracks'
+import Header from './theme/Header'
 import { Link } from 'react-router-dom'
 
 class About extends Component {
@@ -16,7 +17,7 @@ class About extends Component {
 
   render () {
     return <div>
-      <h2>About</h2>
+      <Header>About</Header>
       <form onSubmit={this.addTrack.bind(this)}>
         <input type='text' placeholder='Track name'
           ref={(el => { this.trackInput = el })} />
@@ -37,7 +38,6 @@ class About extends Component {
 }
 
 function mapStateToProps (state) {
-  console.log('~~state:', state)
   return {
     tracks: state.tracks
   }
