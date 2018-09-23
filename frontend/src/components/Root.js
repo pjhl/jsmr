@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Home from './Home'
 import About from './About'
 import Topics from './Topics'
+import Page from './Page'
 
 const Root = ({ store }) => (
   <Provider store={store}>
@@ -13,6 +14,7 @@ const Root = ({ store }) => (
         <Route path='/' exact component={Home} />
         <Route path='/about' component={About} />
         <Route path='/topics' component={Topics} />
+        <Route path='/*.html' exact component={Page} />
       </Switch>
     </Router>
   </Provider>
